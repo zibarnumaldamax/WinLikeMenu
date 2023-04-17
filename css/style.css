@@ -1,0 +1,176 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 28px;
+    color: white;
+}
+
+.wrapperMain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 130px;
+}
+
+.topBlock {
+    height: 80px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    float: right;
+}
+
+.mainBlock {
+    display: grid;
+    height: 630px;
+    gap: 15px;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px; 
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+}
+
+[class^="block-"]:hover {
+    animation-name: blocksAnimation;
+    animation-duration: 150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+.block-Mail {
+    background-color: #08ACBB;
+    grid-column: 1 / span 2;
+}
+
+.block-Calendar {
+    background-color: #6E49CC;
+    grid-column: 3 / span 2;
+}
+
+.block-Maps {
+    background-color: #B605C0;
+}
+
+.block-SkyDrive {
+    background-color: #1069D5;
+
+}
+
+.block-People {
+    background-color: #E3633C;
+    grid-column: 1 / span 2;
+}
+
+.block-Stocks {
+    background-color: #06B105;
+    grid-column: 3 / span 2;
+}
+
+.block-Sport {
+    background-color: #6E49CC;
+    grid-column: 5 / span 2;
+}
+
+.block-Messaging {
+    background-color: #B605C0;
+    grid-column: 1 / span 2;
+}
+
+.block-Weather {
+    background-color: #3699F5;
+    grid-column: 3 / span 2;
+}
+
+.block-News {
+    background-color: #03A2B5;
+    grid-column: 5 / span 2;
+}
+
+.block-Desktop {
+    background-image: url("../img/wallpaper.jpg");
+    background-color: #3699F5;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / span 2;
+}
+
+.block-InternetExplorer {
+    background-color: #03A2B5;
+
+}
+
+.block-Store {
+    background-color: #06B105;
+
+}
+
+.block-Photos {
+    background-color: #08ACBB;
+    grid-column: 5 / span 2;
+}
+
+.iconAligh {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    left: 110px;
+}
+
+.iconAlighSmall {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    left: 35px;
+}
+
+.blocksText {
+    font-size: 16px;
+    position: relative;
+    top: 110px;
+    margin-left: 20px;
+}
+
+.userNameText {
+    position: relative;
+    right: 10px;
+}
+
+.blockSun:hover {
+    align-items: center;
+    animation-name: sunAnimation;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes sunAnimation {
+    from {
+        opacity: 100%;
+        width: 80px;
+        height: 80px;
+    }
+    to {
+        opacity: 90%;
+        width: 77px;
+        height: 77px;
+    }
+}
+
+@keyframes blocksAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.03);
+    }
+}
